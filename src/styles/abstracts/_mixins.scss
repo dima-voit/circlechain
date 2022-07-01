@@ -1,0 +1,54 @@
+@mixin font-properties ($size: 20px, $lineHeight: 1.2, $weight: 500, $style: normal) {
+  font-size: $size;
+  font-style: $style;
+  font-weight: $weight;
+  line-height: $lineHeight;
+}
+
+
+@mixin adaptiv-font($psSize, $mobSize) {
+  $addSize: $psSize - $mobSize;
+  $addMobSize: $addSize + $addSize * 0.7;
+  @media (max-width: $width-md) {
+    font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$max-width}));
+  }
+  @media (min-width: $width-md) {
+    font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$max-width}));
+  }
+}
+
+@mixin xxl {
+  @media (max-width: $width-xxl) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (max-width: $width-xl) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: $width-lg) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: $width-md) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: $width-sm) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (max-width: $width-xs) {
+    @content;
+  }
+}

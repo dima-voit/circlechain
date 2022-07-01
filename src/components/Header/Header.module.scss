@@ -1,0 +1,14 @@
+@import './../../styles/abstracts/mixins';
+@import './../../styles/base/base';
+
+.header {
+  padding: 30px 0;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 100;
+  }
+}

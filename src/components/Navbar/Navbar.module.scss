@@ -1,0 +1,23 @@
+@import './../../styles/abstracts/variables';
+@import './../../styles/abstracts/mixins';
+
+.nav {
+  display: flex;
+  gap: 55px;
+
+  @include lg {
+    margin-left: auto;
+    font-size: 16px;
+  }
+
+  @include sm {
+    // display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    flex-direction: column;
+    gap: 15px;
+    height: 100vh;
+  }
+}

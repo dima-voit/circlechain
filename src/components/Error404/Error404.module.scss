@@ -1,0 +1,52 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins';
+
+.error__text {
+  font-family: 'Special Elite', cursive;
+  @include adaptiv-font(280, 120);
+  color: #fee;
+  text-shadow: 0 -20px 100px, 0 0 2px, 0 0 2px #ff4444, 0 0 2px #ff4444, 0 0 2px #ff4444, 0 10px 3px #000;
+  letter-spacing: 25px;
+
+  span {
+    animation: blink linear infinite 2s;
+
+    &:nth-of-type(2){
+      animation: blink linear infinite 3s;
+    }
+  }
+}
+
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79%{
+    color: #333;
+  }
+  80% {
+    
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}

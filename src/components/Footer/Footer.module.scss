@@ -1,0 +1,30 @@
+.footer {
+  margin-top: auto;
+  padding: 90px 0 60px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 90px;
+  }
+
+  &__item {
+    &:first-child {
+      width: 100%;
+      max-width: 350px;
+    }
+    &:last-child {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  small {
+    display: block;
+    text-align: right;
+  }
+}

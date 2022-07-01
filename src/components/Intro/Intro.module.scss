@@ -1,0 +1,25 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins';
+
+
+.intro {
+  padding: 70px 0;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    @include adaptiv-font(75, 32);
+  }
+
+  &__text {
+    margin-bottom: 70px;
+
+    p {
+      @include font-properties (36px);
+    }
+  }
+}

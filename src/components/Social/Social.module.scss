@@ -1,0 +1,23 @@
+@import './../../styles/abstracts/variables';
+@import './../../styles/abstracts/mixins';
+@import './../../styles/abstracts/placeholders';
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-left: auto;
+  
+  a {
+    font-size: 30px;
+    @extend %transition;
+    
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+
+  @include lg {
+    display: none;
+  }
+}

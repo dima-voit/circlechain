@@ -1,0 +1,20 @@
+@import './../abstracts/variables';
+@import './../abstracts/mixins';
+
+body {
+  font-family: $font-family;
+  @include font-properties;
+  color: $color-light;
+  background-color: $color-primary;
+}
+
+a {
+  color: $color-light;
+  text-decoration: none;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

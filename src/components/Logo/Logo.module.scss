@@ -1,0 +1,15 @@
+@import './../../styles/abstracts/variables';
+@import './../../styles/abstracts/mixins';
+
+.logo {
+  margin-right: 75px;
+
+  img {
+    width: 256px;
+    height: auto;
+
+    @include lg {
+      width: 180px;
+    }
+  }
+}
