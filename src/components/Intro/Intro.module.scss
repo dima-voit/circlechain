@@ -5,14 +5,42 @@
 .intro {
   padding: 70px 0;
 
+  &__img {
+    @include md {
+      max-width: 360px;
+    }
+  }
+
   &__container {
     display: flex;
     align-items: center;
+
+    @include md {
+      flex-direction: column;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 737px;
+
+    @include md {
+      margin-bottom: 50px;
+      text-align: center;
+    }
   }
 
   &__title {
     margin-bottom: 10px;
-    @include adaptiv-font(75, 32);
+    @include font-properties(75px, 1.2, 700);
+    
+    @include lg {
+      font-size: 60px;
+    }
+
+    @include md {
+      font-size: 32px;
+    }
   }
 
   &__text {
@@ -20,6 +48,10 @@
 
     p {
       @include font-properties (36px);
+
+      @include md {
+        font-size: 20px;
+      }
     }
   }
 }

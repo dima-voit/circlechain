@@ -3,7 +3,7 @@
 
 .error__text {
   font-family: 'Special Elite', cursive;
-  @include adaptiv-font(280, 120);
+  @include adaptiv-font(220, 120);
   color: #fee;
   text-shadow: 0 -20px 100px, 0 0 2px, 0 0 2px #ff4444, 0 0 2px #ff4444, 0 0 2px #ff4444, 0 10px 3px #000;
   letter-spacing: 25px;

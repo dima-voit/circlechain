@@ -9,10 +9,10 @@ import styles from './Intro.module.scss';
 const Intro = () => {
   return (
     <div className={styles.intro}>
-      <Container  className={styles.intro__container}>
+      <Container className={styles.intro__container}>
         <div className={styles.intro__content}>
-          <h1  className={styles.intro__title}>Save, Buy and Sell Your blockchain asset</h1>
-          <div  className={styles.intro__text}>
+          <h1 className={styles.intro__title}>Save, Buy and Sell Your blockchain asset</h1>
+          <div className={styles.intro__text}>
             <p>The easy to manage and trade<br/> your cryptocurency asset</p>
           </div>
           <div>
@@ -21,7 +21,7 @@ const Intro = () => {
           </div>
         </div>
         <div className={styles.intro__img}>
-        <img src={intro} alt="Intro" />
+          <img src={intro} alt="Intro" />
         </div>
       </Container>
     </div>
