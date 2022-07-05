@@ -1,3 +1,8 @@
 @import '../../styles/abstracts/variables';
 @import '../../styles/abstracts/mixins';
 
+.coin__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(297px, 1fr));
+  gap: 50px 24px;
+}

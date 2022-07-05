@@ -1,0 +1,46 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins';
+
+.coin {
+  padding: 18px;
+  border: 1px solid $color-light;
+  box-shadow: 0px 1px 6px 4px rgba(115, 253, 170, 0.89);
+  border-radius: 18px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 35px;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+
+  &__symbol {
+    font-family: $coin-title;
+    @include font-properties(18px, 1.2, 600);
+    text-transform: uppercase;
+  }
+
+  &__name {
+    padding: 4px 6px;
+    font-family: $coin-title;
+    @include font-properties(10px, 1.2, 600);
+    background: rgba(182, 182, 182, 0.3);
+    border-radius: 4px;
+  }
+
+  &__price {
+    margin-bottom: 9px;
+    font-family: $coin-price;
+    @include font-properties(24px);
+  }
+
+  &__percent {
+    font-family: $coin-price;
+    @include font-properties(18px);
+  }
+}
