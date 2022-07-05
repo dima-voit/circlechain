@@ -11,8 +11,8 @@ const Technology = () => {
     <div className={styles.technology}>
       <Container className={styles.technology__container}>
         <div className={styles.technology__header}>
-          <h2 className={styles.technology__title}>Global Decentralize currency based on<br/> blockchain technology</h2>
-          <h3 className={styles.technology__subtitle}>Web3 is the latest efficient technology</h3>
+          <h2>Global Decentralize currency based on<br/> blockchain technology</h2>
+          <h3>Web3 is the latest efficient technology</h3>
         </div>
         <div className={styles.technology__content}>
           <div className={styles.technology__img}>
