@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import clsx from 'clsx';
 
-const Input = () => {
+import styles from './Input.module.scss';
+
+const Input = ({ className, type }) => {
   return (
-    <div>Input</div>
+    <input className={clsx(styles["input"], className)} type={type}/>
   )
 }
 

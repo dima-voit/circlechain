@@ -1,9 +1,11 @@
 @import '../../styles/abstracts/variables';
 @import '../../styles/abstracts/mixins';
 
-
 .intro {
-  padding: 70px 0;
+  padding-top: 160px;
+  @include lg {
+    padding-top: 75px;
+  }
 
   &__img {
     @include md {
@@ -51,6 +53,25 @@
 
       @include md {
         font-size: 20px;
+      }
+    }
+  }
+
+  &__btns {
+    display: flex;
+    gap: 25px 60px;
+
+    &__colored {
+      background-color: $color-secondary-light;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    &__light {
+      &:hover {
+        transform: scale(1.1);
       }
     }
   }

@@ -5,7 +5,7 @@ import Container from '../Container/Container';
 import Logo from '../Logo/Logo';
 import Navbar from '../Navbar/Navbar';
 import Social from '../Social/Social';
-import Button from '../UI/Button/Button';
+// import Button from '../UI/Button/Button';
 
 import styles from './Header.module.scss';
 
@@ -16,9 +16,9 @@ const Header = () => {
         <Logo />
         <Navbar />
         <Social />
-        <Button className={styles.header__toggle}>
+        {/* <Button className={styles.header__toggle}>
           <IoReorderThreeOutline />
-        </Button>
+        </Button> */}
       </Container>
     </div>
   )

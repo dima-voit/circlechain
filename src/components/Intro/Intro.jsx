@@ -15,9 +15,9 @@ const Intro = () => {
           <div className={styles.intro__text}>
             <p>The easy to manage and trade<br/> your cryptocurency asset</p>
           </div>
-          <div>
-            <Button>Connect Wallet</Button>
-            <Button>Start Trading</Button>
+          <div className={styles.intro__btns}>
+            <Button className={styles.intro__btns__colored}>Connect Wallet</Button>
+            <Button className={styles.intro__btns__light}>Start Trading</Button>
           </div>
         </div>
         <div className={styles.intro__img}>

@@ -1,0 +1,11 @@
+@import '../../../styles/abstracts/variables';
+@import '../../../styles/abstracts/mixins';
+
+.input {
+  padding: 10px 15px;
+  font-family: $font-family;
+  @include font-properties(14px, 1.2, 400);
+  color: $color-primary;
+  border: 3px solid $color-secondary;
+  border-radius: 10px;
+}
