@@ -26,7 +26,7 @@ const Market = () => {
         <h2>Market Trend</h2>
         <ul className={styles.coin__list}>
           {listOfCoins.map((coin) => {
-            return <Coin 
+            return <Coin
               key={coin.id}
               image={coin.image}
               symbol={coin.symbol}

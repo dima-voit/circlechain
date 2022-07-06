@@ -43,4 +43,12 @@
     font-family: $coin-price;
     @include font-properties(18px);
   }
+
+  &__down {
+    color: red;
+  }
+
+  &__up {
+    color: green;
+  }
 }

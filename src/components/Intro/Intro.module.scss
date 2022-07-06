@@ -36,8 +36,12 @@
     margin-bottom: 10px;
     @include font-properties(75px, 1.2, 700);
     
+    @include xl {
+      font-size: 65px;
+    }
+
     @include lg {
-      font-size: 60px;
+      font-size: 48px;
     }
 
     @include md {
@@ -60,6 +64,11 @@
   &__btns {
     display: flex;
     gap: 25px 60px;
+
+    @include md {
+      flex-direction: column;
+      align-items: center;
+    }
 
     &__colored {
       background-color: $color-secondary-light;

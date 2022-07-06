@@ -9,6 +9,10 @@
 
   h2 {
     margin-bottom: 55px;
+
+    @include sm {
+      text-align: center;
+    }
   }
 
   .coin__list {
