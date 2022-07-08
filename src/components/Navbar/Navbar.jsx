@@ -1,14 +1,16 @@
 import React from 'react';
+import clsx from 'clsx';
+
 import { NavLink } from 'react-router-dom';
 
 import styles from './Navbar.module.scss';
 
-const Navbar = () => {
+const Navbar = ({ className }) => {
   return (
-    <nav className={styles.nav}>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/blog">Blog</NavLink>
-      <NavLink to="/support">Support</NavLink>
+    <nav className={clsx(styles["nav"], className)}>
+      <NavLink to="/" className={({isActive}) => isActive ? "active__link" : ""}>Home</NavLink>
+      <NavLink to="/blog" className={({isActive}) => isActive ? "active__link" : ""}>Blog</NavLink>
+      <NavLink to="/support" className={({isActive}) => isActive ? "active__link" : ""}>Support</NavLink>
     </nav>
   )
 }

@@ -11,4 +11,10 @@
     overflow: hidden;
     z-index: 100;
   }
+
+  &__social {
+    @include lg {
+      display: none;
+    }
+  }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Container from '../Container/Container';
+import Circle from '../Circle/Circle';
 import Button from '../UI/Button/Button';
 
 import intro from '../../img/intro.png';
@@ -9,6 +10,8 @@ import styles from './Intro.module.scss';
 const Intro = () => {
   return (
     <div className={styles.intro}>
+      <Circle className={styles.circle1} />
+      <Circle className={styles.circle2} />
       <Container className={styles.intro__container}>
         <div className={styles.intro__content}>
           <h1 className={styles.intro__title}>Save, Buy and Sell Your blockchain asset</h1>

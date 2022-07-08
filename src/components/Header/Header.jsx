@@ -15,7 +15,7 @@ const Header = () => {
       <Container className={styles.header__container}>
         <Logo />
         <Navbar />
-        <Social />
+        <Social className={styles.header__social} />
         {/* <Button className={styles.header__toggle}>
           <IoReorderThreeOutline />
         </Button> */}

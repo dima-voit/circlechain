@@ -3,7 +3,7 @@
 
 .nav {
   display: flex;
-  gap: 55px;
+  gap: 30px 55px;
 
   @include lg {
     margin-left: auto;
@@ -19,5 +19,9 @@
     flex-direction: column;
     gap: 15px;
     height: 100vh;
+  }
+
+  .active__link {
+    color: $color-secondary;
   }
 }

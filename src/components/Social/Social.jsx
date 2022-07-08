@@ -1,11 +1,12 @@
 import React from 'react';
+import clsx from 'clsx';
 import { AiOutlineFacebook, AiOutlineInstagram, AiOutlineLinkedin, AiOutlineYoutube } from 'react-icons/ai';
 
 import styles from './Social.module.scss';
 
-const Social = () => {
+const Social = ({ className }) => {
   return (
-    <ul className={styles.social}>
+    <ul className={clsx(styles["social"], className)}>
       <li className={styles.social__item}>
         <a className={styles.social__item_link} href="https://www.facebook.com" target="_blank" rel="noreferrer">
           <AiOutlineFacebook />

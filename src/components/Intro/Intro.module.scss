@@ -2,6 +2,7 @@
 @import '../../styles/abstracts/mixins';
 
 .intro {
+  position: relative;
   padding-top: 160px;
   @include lg {
     padding-top: 75px;
@@ -83,5 +84,15 @@
         transform: scale(1.1);
       }
     }
+  }
+
+  .circle1 {
+    top: -15px;
+    left: 95px;
+  }
+  
+  .circle2 {
+    bottom: -140px;
+    right: 70px;
   }
 }

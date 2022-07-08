@@ -2,6 +2,7 @@
 @import '../../styles/abstracts/mixins';
 
 .error__text {
+  padding-top: 100px;
   font-family: 'Special Elite', cursive;
   @include adaptiv-font(220, 120);
   color: #fee;
