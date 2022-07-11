@@ -1,0 +1,48 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins';
+@import '../../styles/abstracts/placeholders';
+
+.contact {
+  padding: 100px 0;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 20px;
+    justify-content: center;
+  }
+
+  &__item {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 480px;
+  }
+
+  &__icon {
+    font-size: 50px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    @include font-properties(22px, 1.2, 700);
+  }
+
+  &__link {
+    margin-bottom: 10px;
+
+    a {
+      @include font-properties(22px, 1.2, 600);
+      color: $color-secondary-light;
+      @extend %transition;
+
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+  }
+
+  &__text {
+    @include font-properties(18px, 1.2, 400);
+  }
+}

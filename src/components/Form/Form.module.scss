@@ -1,0 +1,42 @@
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins';
+@import '../../styles/abstracts/placeholders';
+
+form {
+  width: 100%;
+  max-width: 480px;
+
+  .form__group {
+    width: 100%;
+    margin-bottom: 15px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      padding-left: 10px;
+      @include font-properties(12px, 1.2, 600);
+    }
+
+    input {
+      width: 100%;
+    }
+
+    textarea {
+      width: 100%;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin-left: auto;
+    background-color: $color-secondary-light;
+
+    &:hover {
+      background-color: $color-secondary;
+    }
+
+    @include md {
+      width: 100%;
+    }
+  }
+}

@@ -48,11 +48,6 @@
 
     &__input {
       width: 100%;
-
-      &:focus {
-        outline: none;
-        border: 3px solid $color-secondary-light;
-      }
     }
 
     &__button {
