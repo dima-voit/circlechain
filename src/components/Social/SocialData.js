@@ -1,23 +1,24 @@
 import { AiOutlineFacebook, AiOutlineInstagram, AiOutlineLinkedin, AiOutlineYoutube } from 'react-icons/ai';
+import { v4 as uuidv4 } from 'uuid';
 
 const socials = [
   {
-    id: 1,
+    id: uuidv4(),
     link: "https://www.facebook.com",
     icon: <AiOutlineFacebook />
   },
   {
-    id: 2,
+    id: uuidv4(),
     link: "https://www.instagram.com",
     icon: <AiOutlineInstagram />
   },
   {
-    id: 3,
+    id: uuidv4(),
     link: "https://www.linkedin.com",
     icon: <AiOutlineLinkedin />
   },
   {
-    id: 4,
+    id: uuidv4(),
     link: "https://www.youtube.com",
     icon: <AiOutlineYoutube />
   }
