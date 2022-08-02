@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
 
-    @include md {
+    @include lg {
       flex-direction: column;
     }
   }
@@ -27,7 +27,11 @@
     width: 100%;
     max-width: 737px;
 
-    @include md {
+    @include xl {
+      max-width: 600px;
+    }
+
+    @include lg {
       margin-bottom: 50px;
       text-align: center;
     }
@@ -38,7 +42,7 @@
     @include font-properties(75px, 1.2, 700);
     
     @include xl {
-      font-size: 65px;
+      font-size: 60px;
     }
 
     @include lg {
@@ -54,7 +58,7 @@
     margin-bottom: 70px;
 
     p {
-      @include font-properties (36px);
+      @include font-properties (32px);
 
       @include md {
         font-size: 20px;
@@ -66,7 +70,11 @@
     display: flex;
     gap: 25px 60px;
 
-    @include md {
+    @include lg {
+      justify-content: center;
+    }
+
+    @include sm {
       flex-direction: column;
       align-items: center;
     }
