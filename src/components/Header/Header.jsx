@@ -15,7 +15,7 @@ const Header = () => {
     <header className={styles.header}>
       <Container className={styles.header__container}>
         <Logo />
-        <Navbar className={`${styles.header__nav} ${menuOpen ? styles[`header__nav-open`] : {}}`} />
+        <Navbar className={`${styles.header__nav} ${menuOpen ? styles[`header__nav-open`] : {}}`} onClick={menuToggler} />
         <Social className={styles.header__social} />
         <div className={styles.header__toggle} onClick={menuToggler}>
           {!menuOpen ? <IoReorderThreeOutline /> : <IoCloseOutline />}

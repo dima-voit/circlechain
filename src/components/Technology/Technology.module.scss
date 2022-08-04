@@ -46,7 +46,8 @@
     position: absolute;
 
     @include xl {
-      width: 576px;
+      width: 100%;
+      max-width: 576px;
     }
 
     @include lg {
