@@ -1,4 +1,4 @@
-![Design preview for the Easybank landing page coding challenge](./src/img/preview.png)
+![Design preview for the Circlechain](./src/img/preview.png)
 
 # About The Project
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
