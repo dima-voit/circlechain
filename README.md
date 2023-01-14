@@ -1,6 +1,27 @@
-# Getting Started with Create React App
+![Design preview for the Easybank landing page coding challenge](./src/img/preview.png)
 
+# About The Project
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+The purpose of this project was to understand the possibilities and how React works.
+
+
+##
+### Demo [Circlechain](https://circlechain.vercel.app)
+
+---
+
+## Built with
+
+<img src="https://img.shields.io/badge/Create React App-09D3AC?style=flat-square&logo=Create React App&logoColor=FFFFFF" /> <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=FFFFFF" /> <img src="https://img.shields.io/badge/React Router-CA4245?style=flat-square&logo=React Router&logoColor=FFFFFF" />
+<img src="https://img.shields.io/badge/Axios-5A29E4?style=flat-square&logo=Axios&logoColor=FFFFFF" />
+<img src="https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=Sass&logoColor=FFFFFF" />
+
+Additionally, the following tools were used:
+
+- uuid - generates a unique key
+- clsx - helps to add multiple classes to ReactJS component
+- react-icon - social media icons
 
 ## Available Scripts
 
